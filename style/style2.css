@@ -1,0 +1,225 @@
+*{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    quotes: none;
+    text-decoration: unset;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+body{
+    min-height: 100%;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    background: #000000;
+}
+
+.nav .back-btn {
+    position: absolute;
+    font-size: 30px;
+    left: 35px;
+    top: 10px;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.nav .logo{
+    position: absolute;
+    width: 72px;
+    height: 60px;
+    left: 100px;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: row;
+}
+
+.nav ul li{
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.nav ul li a{
+    color: #D9D9D9;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 65.5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1;
+    background-position:  0 0, 0 0, 100% 0, 0 100%;
+    background-size: 3px 100%, 100% 3px, 3px 100% , 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.container img{
+    width: max-content;
+    height: auto;
+    width: 100vmax;
+}
+
+.container p {
+    position: absolute;
+    font-size: 1.1vmax;
+    width: fit-content;
+    top : 13.5rem;
+    left: 30rem;
+    color: #D9D9D9;
+}
+
+.container .learn-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom : 10rem;
+    left: 40rem;
+    background-color: #FF000F;
+    width: 15%;
+    height: 6%;
+}
+
+.container .learn-more .border{
+    position: absolute;
+    width: 15.3rem;
+    height: 3rem;
+
+    background:
+    linear-gradient(to right, #D9D9D9 2px, transparent 2px) 0 0,
+    linear-gradient(to right, #D9D9D9 2px, transparent 2px) 0 100%,
+    linear-gradient(to left, #D9D9D9 2px, transparent 2px) 100% 0,
+    linear-gradient(to left, #D9D9D9 2px, transparent 2px) 100% 100%,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 0 0,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 8% 0,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 17% 0,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 82% 0,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 91% 0,
+    linear-gradient(to bottom, #D9D9D9 2px, transparent 2px) 100% 0,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 0 100%,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 8% 100%,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 17% 100%,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 82% 100%,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 91% 100%,
+    linear-gradient(to top, #D9D9D9 2px, transparent 2px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+.container .learn-more a{
+    z-index: 1;
+    list-style: none;
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 20rem;
+    width: 100%;
+    top: 50rem;
+    justify-content: center;
+}
+
+.dropbtn-sd, .dropbtn-smp, .dropbtn-sma{
+    display: flex;
+    background-color: #FAFAFA;
+    color: #000000;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    width: 18rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0,0,0,0.5);
+}
+
+
+
+.dropbtn-sd:hover, .dropbtn-sd:focus{
+    background-color: #FAFAFA;
+}
+
+.dropdown-sd, .dropdown-smp, .dropdown-sma {
+    position: relative;
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.dropdown-sd .dropbtn-sd span, .dropdown-smp .dropbtn-smp span, .dropdown-sma .dropbtn-sma span{
+    margin-left: auto;
+    width: 2rem;
+}
+
+.dropbtn-sd p{
+    padding-left: 2rem;
+}
+
+
+.logo-sekolah{
+    position: absolute;
+    height: 5rem;
+    top : -1.3rem;
+}
+
+.dropbtn-sd .logo-sekolah {
+    left: 11rem;
+}
+
+.dropbtn-smp .logo-sekolah {
+    left: 13rem;
+}
+
+.dropbtn-sma .logo-sekolah {
+    left: 12rem;
+}
+
+.drop-content-sd, .drop-content-smp, .drop-content-sma {
+    display: none;
+    background-color: #FAFAFA;
+    min-width: 18rem;
+    max-width: 18rem;
+    position: absolute;
+    top: 4rem;
+    border-radius: 15px;
+    box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.drop-content-sd a, .drop-content-smp a, .drop-content-sma a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.showSD{display: block;}
+.showSMP{display: block;}
+.showSMA{display: block;}

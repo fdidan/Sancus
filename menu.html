@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet"> 
+    <title>Menu - Sancus</title>
+</head>
+<body>
+    <!--navbar-->
+    <div class="wrapper">
+        <div class="nav">
+            <a class="back-btn" href="home.html"><</a>
+            <img class="logo" src="image/logo.png" alt="">
+            
+            <ul>
+                <li>
+                    <a class="tentang" href="#">Tentang Web</a>
+                </li>
+                <li>
+                    <a class="aboutus" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--navbar-->
+
+    <!--hero-->
+    <div class="container">
+        <img src="image/hero-img2.png" alt="">
+        <p>Sancus (also known as Sangus or Semo Sancus) was a god of trust</p>
+        <div class="learn-more">
+            <a href="tentangSancus.html">LEARN MORE</a>
+            <div class="border"></div>
+        </div>
+    </div>
+    <!--hero-->
+
+    <!--menu-->
+    <div class="menu">
+        <div class="dropdown-sd">
+            <div class="dropdown-btn">
+                <button onclick="dropdownSD()" class="dropbtn-sd">
+                    <p>SEKOLAH DASAR</p>
+                    <img class="logo-sekolah" src="image/logo-sd.png" alt="">
+                    <span class="icon-drop">^</span>
+                </button>
+                <div id="content-sd" class="drop-content-sd">
+                    <a href="#">BAHASA INDONESIA</a>
+                    <a href="#">BAHASA INGGRIS</a>
+                    <a href="#">IPA</a>
+                    <a href="#">UMUM</a>
+                    <a href="#">IPS</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="dropdown-smp">
+            <div class="dropdown-btn">
+                <button onclick="dropdownSMP()" class="dropbtn-smp">
+                    <p>SEKOLAH MENENGAH PERTAMA</p>
+                    <img class="logo-sekolah" src="image/logo-smp.png" alt="">
+                    <span id="icon-drop">^</span>
+                </button>
+                <div id="content-smp" class="drop-content-smp">
+                    <a href="#">BAHASA INDONESIA</a>
+                    <a href="#">BAHASA INGGRIS</a>
+                    <a href="#">IPA</a>
+                    <a href="#">UMUM</a>
+                    <a href="#">IPS</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="dropdown-sma">
+            <div class="dropdown-btn">
+                <button onclick="dropdownSMA()" class="dropbtn-sma">
+                    <p>SEKOLAH MENENGAH ATAS/K</p>
+                    <img class="logo-sekolah" src="image/logo-sma.png" alt="">
+                    <span class="icon-drop">^</span>
+                </button>
+                <div id="content-sma" class="drop-content-sma">
+                    <a href="#">BAHASA INDONESIA</a>
+                    <a href="#">BAHASA INGGRIS</a>
+                    <a href="#">IPA</a>
+                    <a href="#">UMUM</a>
+                    <a href="#">IPS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/dropdown.js"></script>
+    <!--menu-->
+</body>
+</html>
