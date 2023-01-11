@@ -63,11 +63,11 @@ body{
 }
 
 .greetings{
-    position: absolute;
+    position: relative;
     width: 60%;
     height: 144px;
-    left: 164px;
-    top: 228px;
+    left: 15rem;
+    top: 10rem;
     color: #000000;
 }
 
@@ -82,8 +82,8 @@ body{
     position: absolute;
     width: 156px;
     height: 56px;
-    left: 287px;
-    top: 390px;
+    left: 20rem;
+    top: 29rem;
     background: #D9D9D9;
     border-radius: 15px;
 }
@@ -94,7 +94,9 @@ body{
 }
 
 .hero {
+    position: relative;
+    right: 2rem;
     align-self: flex-end;
-    width: 40rem;
-    height: 30rem;
+    max-width: 42rem;
+    max-height: 32rem;
 }

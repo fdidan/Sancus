@@ -38,8 +38,8 @@ body{
 
 .nav .logo{
     position: absolute;
-    width: 72px;
-    height: 60px;
+    max-width: 72px;
+    max-height: 60px;
     left: 100px;
 }
 
@@ -66,7 +66,7 @@ body{
     display: flex;
     position: absolute;
     top: 65.5px;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
 
@@ -77,8 +77,8 @@ body{
 }
 
 .container img{
-    width: max-content;
-    height: auto;
+    
+    max-height: auto;
     width: 100vmax;
 }
 

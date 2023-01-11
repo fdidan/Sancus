@@ -2,6 +2,7 @@
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+    list-style: none;
     quotes: none;
     text-decoration: unset;
     outline: none;
@@ -64,11 +65,34 @@ body{
 
 
 .container{
-    background-color: aqua;
+    display: flex;
     position: relative;
-    left: 10%;
-    top : 100px;
+    left: 40%;
+    top : 10rem;
+    width: fit-content;
+}
+
+.container div{
+    padding: 7%;
     z-index: 1;
-    width: 80vmax;
-    height: 100vmax;
+}
+
+.dark{
+    background-color: #D9D9D9;
+}
+
+input{
+    border: 1px solid #D9D9D9;
+}
+
+.container form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit{
+    background-color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 5px;
 }
